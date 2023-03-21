@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <!--FORM TAG PRACTICING-->
+    <form  action="image.html" method="GET" enctype="multipart/form-data">
+        <div>
+            <label for="username">username</label>
+            <input type="text" name="username" id="username"  placeholder="enter user name here"
+            size="20" maxlength="20" required>
+
+        </div>
+        <div>
+            <label for="password">password</label>
+                <input type="password" name="passowrd" id="password" placeholder="enter the password here"
+                size="25" minlength="8">
+        </div>
+        <div>
+            <label for="email">email id</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div>
+            <label for="dof">date of birth</label>
+            <input type="date" name="date of birth" id="dof">
+        </div>
+        <div>
+            <label for="year">year of joining</label>
+            <input type="number" name="year" id="year"
+            min="2000" max="2022" step="2">
+        </div>
+        <div>
+            <label for="tel">telephone number</label>
+            <input type="tel" name="tel" id="tel" pattern="[0-9]{5}-[0-90]{5}">
+        </div>
+        <div>
+            <label for="url">enter the url</label>
+            <input type="url" name="url" id="url">
+        </div>
+        <div>
+            <label for="search">search this thing</label>
+            <input type="search" name="search" id="search">
+        </div>
+        <div>
+            <label for="about">about</label>
+            <textarea name="about" type="text" id="about" cols="30" rows="5">about me..</textarea>
+        </div>
+        <div>
+            <input type="checkbox" name="sms" id="sms">
+            <label for="sms">sms alert</label>
+        </div>
+        <div>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">male</label>
+            <input type="radio" name="gender" id="female" value="female" >
+            <label for="female">female</label>
+        </div>
+        <div>
+            <label for="state">state</label>
+            <select name="state" id="state">
+            <option value="tamil nadu">tamil nadu</option>
+            <option value="kerala">kerala</option>
+            <option value="karnataka">karnataka</option>
+        </select> 
+        </div>
+        <div>
+            <label for="color">color</label>
+            <input type="color" name="color" id="color">
+        </div>
+        <div>
+            <input type="hidden" name="hidden" value="123">
+        </div>
+        <div>
+            <label for="file">resume</label>
+            <input type="file" name="file" id="file">
+        </div>
+       <br/>
+         <div>
+            <button>submit</button>
+            <button type="reset">reset</button>
+        </div>
+        <div>
+            <input type="image" name="submit" src="image\submit.jpg" width="100">
+        </div>
+    </form>
+</body>
+</html>
